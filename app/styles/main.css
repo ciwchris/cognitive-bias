@@ -1,0 +1,190 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+Note: any .css or .scss files included in the 'styles' directory
+will be correctly compiled during `gulp serve` and `gulp`
+ */
+
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
+@media (max-width: 690px) {
+    body::before {
+        background-position: center;
+    }
+}
+
+@media (max-width: 512px)  and (min-resolution: 1.5dppx),
+       (max-width: 1024px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('../images/bg_1024.png');
+  }
+}
+@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
+       (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
+  body::before {
+    background-image: url('../images/bg_2048.png');
+  }
+}
+@media (min-width: 1025px) and (min-resolution: 1.5dppx),
+       (min-width: 2049px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('../images/bg_2880.png');
+  }
+}
+
+body .demo-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.demo-blog .mdl-card__title {
+    min-height: 150px;
+    align-items: end;
+}
+
+.demo-blog .mdl-card__supporting {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.demo-blog .mdl-mini-footer {
+    margin-top: 40px;
+    height: 80px;
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.demo-blog .mdl-card h3 a {
+    text-decoration: none;
+    color: rgba(255,255,255,.94);
+    font-size: .80em;
+}
+
+.top-remember {
+    border: solid 2px #868c8d;
+}
+
+.top-remember > div:nth-child(1) {
+    background-color: #868c8d;
+}
+
+
+.top-information {
+    border: solid 2px #5e9396;
+}
+
+.top-information > div:nth-child(1) {
+    background-color: #5e9396;
+}
+
+.top-fast {
+    border: solid 2px #7ca942;
+}
+
+.top-fast > div:nth-child(1) {
+    background-color: #7ca942;
+}
+
+.top-meaning {
+    border: solid 2px #6c9ee4;
+}
+
+.top-meaning > div:nth-child(1) {
+    background-color: #6c9ee4;
+}
+
+
+.demo-blog .demo-blog__posts {
+  max-width: 900px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.demo-blog.mdl-layout .mdl-layout__content {
+  padding-top: 150px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.demo-blog .mdl-card .quote:before {
+    content: '“';
+    font-size: 1.7em;
+}
+.demo-blog .mdl-card .quote:after {
+    content: '”';
+    font-size: 1.7em;
+}
+
+.demo-blog .mdl-card .quote {
+    font-size: 1.08em;
+    line-height: 1.5em;
+}
+
+
+// below unknown if needed
+
+.demo-blog .mdl-card__actions:first-child {
+  margin-left: 0;
+}
+.demo-blog .meta {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+.demo-blog .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.demo-blog .mdl-card .meta.meta--fill {
+  justify-content: space-between;
+}
+.demo-blog .meta > *:first-child {
+  margin-right: 16px;
+}
+.demo-blog .meta > * {
+  display: flex;
+  flex-direction: column;
+}
+.demo-blog .demo-blog__posts > .demo-nav {
+  margin: 12px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}

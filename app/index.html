@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <!-- Material Design Lite page styles -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-light_blue.min.css">
+
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+        <main class="mdl-layout__content">
+            <div class="demo-blog__posts mdl-grid">
+                <div class="mdl-card mdl-cell mdl-cell--6-col-desktop top-remember">
+                    <div class="mdl-card__title">
+                    <h3><a href="entry.html">What Should We Remember</a></h3>
+                    </div>
+                    <div class="mdl-card__supporting">
+                        <div class="mdl-card__supporting-text quote">
+                            We can only afford to keep around the bits that are most likely to prove useful in the future. We need to make constant bets and trade-offs around what we try to remember and what we forget.
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border meta meta--fill">
+                        <div></div>
+                        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                            data-mdl-for="menuremember">
+                            <li class="mdl-menu__item">Edit some memories after the fact</li>
+                            <li class="mdl-menu__item">Discard specifics to form generalities</li>
+                            <li class="mdl-menu__item">Reduce events to key elements</li>
+                            <li class="mdl-menu__item">Store memories based on the experience</li>
+                        </ul>
+                        <button id="menuremember" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mdl-card mdl-cell mdl-cell--6-col-desktop top-information">
+                    <div class="mdl-card__title">
+                    <h3><a href="entry.html">Too Much Information</a></h3>
+                    </div>
+                    <div class="mdl-card__supporting">
+                        <div class="mdl-card__supporting-text quote">
+                            There is just too much information in the world, we have no choice but to filter almost all of it out. We need to make constant bets and trade-offs around what we try to remember and what we forget.
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border meta meta--fill">
+                        <div></div>
+                        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                            data-mdl-for="menuinformation">
+                            <li class="mdl-menu__item">Notice things already primed in memory</li>
+                            <li class="mdl-menu__item">Bizarre things stick out more than non-bizarre</li>
+                            <li class="mdl-menu__item">Notice when something has changed</li>
+                            <li class="mdl-menu__item">Drawn to details that confirm beliefs</li>
+                            <li class="mdl-menu__item">Notice flaws in others more easily</li>
+                        </ul>
+                        <button id="menuinformation" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mdl-card mdl-cell mdl-cell--6-col-desktop top-fast">
+                    <div class="mdl-card__title">
+                    <h3><a href="entry.html">Need To Act Fast</a></h3>
+                    </div>
+                    <div class="mdl-card__supporting">
+                        <div class="mdl-card__supporting-text quote">
+                            We need to do our best to assess our ability to affect the situation, apply it to decisions, simulate the future to predict what might happen next, and otherwise act on our new insight.
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border meta meta--fill">
+                        <div></div>
+                        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                            data-mdl-for="menufast">
+                            <li class="mdl-menu__item">Confident in our impact & importantance</li>
+                            <li class="mdl-menu__item">Favor the relatable thing in front of us</li>
+                            <li class="mdl-menu__item">Complete things we've invested energy in</li>
+                            <li class="mdl-menu__item">Preserve autonomy & avoid irreversible</li>
+                            <li class="mdl-menu__item">Favor simple-looking options</li>
+                        </ul>
+                        <button id="menufast" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mdl-card mdl-cell mdl-cell--6-col-desktop top-meaning">
+                    <div class="mdl-card__title">
+                    <h3><a href="entry.html">Not Enough Meaning</a></h3>
+                    </div>
+                    <div class="mdl-card__supporting">
+                        <div class="mdl-card__supporting-text quote">
+                            Once the reduced stream of information comes in, we connect the dots, fill in the gaps with stuff we already think we know, and update our mental models of the world.
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border meta meta--fill">
+                        <div></div>
+                        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+                            data-mdl-for="menumeaning">
+                            <li class="mdl-menu__item">We find stories and patterns</li>
+                            <li class="mdl-menu__item">We fill in characteristics</li>
+                            <li class="mdl-menu__item">We imagine things we’re familiar as better</li>
+                            <li class="mdl-menu__item">We simplify probabilities</li>
+                            <li class="mdl-menu__item">We think we know what others are thinking</li>
+                            <li class="mdl-menu__item">We project our current mindset</li>
+                        </ul>
+                        <button id="menumeaning" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+                attributions
+            </div>
+            </footer>
+        </main>
+        <div class="mdl-layout__obfuscator"></div>
+    </div>
+
+
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>
