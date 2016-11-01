@@ -94,6 +94,36 @@ body .demo-blog {
     background-color: #868c8d;
 }
 
+.entry .top-remember {
+    background-color: #868c8d;
+    padding: 16px;
+}
+
+.entry a.mdl-button {
+    background-color: #868c8d;
+}
+
+
+.entry a.demo-nav__button {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.entry a.demo-nav__button.backward {
+    color: #6c9ee4;
+}
+
+.entry a.demo-nav__button.forward {
+    color: #5e9396;
+}
+
+.entry a.demo-nav__button.backward button {
+    background-color: #6c9ee4;
+}
+
+.entry a.demo-nav__button.forward button {
+    background-color: #5e9396;
+}
 
 .top-information {
     border: solid 2px #5e9396;
